@@ -1,0 +1,9 @@
+event/AlfEventUpsertResponse.class
+event/AlfEventContext$AlfEventContextBuilder.class
+event/AlfEventUpsertResponse$AlfEventUpsertResponseBuilder.class
+user/enums/AlfUserProperty.class
+event/AlfEventDto$AlfEventDtoBuilder.class
+user/AlfUserDto.class
+event/AlfEventDto.class
+event/enums/AlfPropertyType.class
+event/AlfEventContext.class
