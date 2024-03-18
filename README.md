@@ -1,4 +1,3 @@
-# alfabet
 Setup:
     1. In libraries ../development/docker/mariadb need to run command docker-compose up (terminal)
     2. In libraries ../development/docker/neo4j need to run docker-compose build, docker-compose up and after run the script 'property.sh' (terminal)
@@ -116,7 +115,6 @@ Rest Api:
 
 
 Additionally:
-    Used prefix Alf for internal classes
     Not implemented logic for password and email processing (User service). Need to create an otp password and send to auth to decode
     Not implemented logic for validation on unique email
     For user storage chose Neo4j, because changes in the user storage scheme and addition of new features are possible. Neo4j is more flexible
