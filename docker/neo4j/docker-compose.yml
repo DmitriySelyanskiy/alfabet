@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+
+  neo4j:
+    build: .
+    container_name: neo4j
+    network_mode: host
+    restart: unless-stopped
+    healthcheck:
+      test: perl -MIO::Socket::INET -e 'exit(! defined( IO::Socket::INET->new("localhost:7687")))'
+      interval: ${HEALTHCHECK_INTERVAL}:-60s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
